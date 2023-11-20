@@ -160,7 +160,7 @@ if "longitude" not in result or str(place_lon) not in result:
     print("FAIL: missing new information: \"{}\"".format(result))
 
 
-print("OK", end="")
+print("OK"),
 
 shutil.copy("tmp_console_main.py", "console.py")
 shutil.copy("models/tmp__init__.py", "models/__init__.py")
