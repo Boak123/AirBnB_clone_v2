@@ -7,6 +7,7 @@ from models.base_model import BaseModel
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine, Column, Integer, String
 from os import environ
+from models.base_model import Base
 
 storage_engine = environ.get("HBNB_TYPE_STORAGE")
 
