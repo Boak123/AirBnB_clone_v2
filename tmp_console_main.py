@@ -137,7 +137,7 @@ class HBNBCommand(cmd.Cmd):
                 try:
                    value = eval(value)
                 except Exception:
-                    print(f"** couldnt evaluate {value}")
+                    print("** couldn't evaluate {}".format(value))
                     pass
             if hasattr(new_instance, key):
                 setattr(new_instance, key, value)
@@ -339,3 +339,5 @@ class HBNBCommand(cmd.Cmd):
         print("Updates an object with new information")
         print("Usage: update <className> <id> <attName> <attVal>\n")
 
+if __name__ == "__main__":
+    HBNBCommand().cmdloop()
