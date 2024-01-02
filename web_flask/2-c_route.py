@@ -2,6 +2,7 @@
 """ that starts a Flask web application C is fun"""
 
 from flask import Flask
+app.url_map.strict_slashes = False
 
 app = Flask(__name__)
 
